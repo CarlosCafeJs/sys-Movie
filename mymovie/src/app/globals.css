@@ -2,59 +2,25 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #572DBA;
 }
 
-@theme inline {
-  --color-background: var(--foreground);
-  --color-foreground: var(--background);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #572DBA;
     --foreground: #ededed;
   }
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--jaro), sans-serif;
 }
 
-.movie-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.movie-card {
-  background-color: #f0f0f0;
-  border-radius: 8px;
-  padding: 10px;
-  text-align: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.movie-poster {
-  width: 100%;
-  border-radius: 8px;
-}
-
-button {
-  margin-bottom: 20px;
-  padding: 10px 20px;
-  background-color: #007bff;
+.text-stroke {
+  -webkit-text-stroke: 1px black;
   color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
+  /* ou o que fizer sentido */
 }
